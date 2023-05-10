@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import RoomMenu from "@/search/[type]/RoomMenu";
 export default function Page({ params }: any) {
   const mapStyle = {
     width: "100%",
@@ -15,8 +16,9 @@ export default function Page({ params }: any) {
   //지도 사이즈 관련 스타일
 
   return (
-    <div className="border-2 h-4/5">
+    <div className="flex w-full border-2 h-full">
       <div id="map" style={mapStyle}></div>
+      <RoomMenu />
     </div>
   );
 }
