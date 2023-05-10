@@ -24,7 +24,12 @@ export default function RootLayout({
 
       <body className={inter.className}>
         <Header />
-        <main className="max-w-full h-full p-9">{children}</main>
+        <main
+          className="max-w-full p-9"
+          style={{ height: "calc(100% - 80px)" }}
+        >
+          {children}
+        </main>
       </body>
     </html>
   );
